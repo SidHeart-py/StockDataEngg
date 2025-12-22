@@ -1,0 +1,19 @@
+{
+	"name": "MatchPqt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "data_ipl_bronze",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
